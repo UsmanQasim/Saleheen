@@ -1,7 +1,11 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
+<!-- comments
     android:width="1400dp"
     android:height="980dp"
+ -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
     android:viewportWidth="1400"
     android:viewportHeight="980">
   <path
