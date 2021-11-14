@@ -15,36 +15,37 @@
             android:orientation="vertical">
 
             <FrameLayout
-                xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
+
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:background="#fafafa"
-                    />
+                    android:contentDescription="@string/CurrentNamazTime"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center"
-                    android:padding="5dp"
                     android:fontFamily="@font/poppinsb"
-                    android:textColor="@color/black"
+                    android:padding="5dp"
                     android:text="@string/CurrentNamazTime"
-                    />
+                    android:textColor="@color/black" />
             </FrameLayout>
 
 
             <GridLayout
-                android:elevation="10dp"
                 android:id="@+id/GridLayout1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
+                android:layout_margin="15dp"
                 android:background="@drawable/shapes"
                 android:columnCount="3"
-                android:orientation="horizontal">
+                android:elevation="10dp"
+                android:orientation="horizontal"
+                android:padding="15dp">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -55,7 +56,7 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="100dp"
                         android:contentDescription="@string/quran"
                         android:src="@drawable/ic_quran" />
 
@@ -66,7 +67,7 @@
                         android:fontFamily="@font/poppinsb"
                         android:text="@string/quran"
                         android:textColor="@color/Gold"
-                        android:textSize="18sp" />
+                        android:textSize="20sp" />
 
                 </LinearLayout>
 
@@ -79,7 +80,7 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="100dp"
                         android:contentDescription="@string/dua"
                         android:src="@drawable/ic_dua" />
 
@@ -90,7 +91,7 @@
                         android:fontFamily="@font/poppinsb"
                         android:text="@string/dua"
                         android:textColor="@color/Gold"
-                        android:textSize="18sp" />
+                        android:textSize="20sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -98,22 +99,23 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="5dp"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="100dp"
                         android:contentDescription="@string/q_Direction"
                         android:src="@drawable/ic_qibla_icon" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
                         android:fontFamily="@font/poppinsb"
+                        android:gravity="center"
                         android:text="@string/q_Direction"
                         android:textColor="@color/Gold"
-                        android:textSize="15sp" />
+                        android:textSize="19sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -125,18 +127,18 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="100dp"
                         android:contentDescription="@string/NearMosque"
                         android:src="@drawable/ic_mosque" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
                         android:fontFamily="@font/poppinsb"
+                        android:gravity="center"
                         android:text="@string/NearMosque"
                         android:textColor="@color/Gold"
-                        android:textSize="18sp" />
+                        android:textSize="19sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -144,22 +146,23 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="5dp"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="100dp"
                         android:contentDescription="@string/SalahTracker"
                         android:src="@drawable/ic_salah_tracker" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
                         android:fontFamily="@font/poppinsb"
+                        android:gravity="center"
                         android:text="@string/SalahTracker"
                         android:textColor="@color/Gold"
-                        android:textSize="17sp" />
+                        android:textSize="20sp" />
                 </LinearLayout>
 
 
@@ -168,22 +171,23 @@
                     android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:layout_margin="5dp"
+                    android:gravity="center"
                     android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="120dp"
+                        android:layout_height="100dp"
                         android:contentDescription="@string/tashbeeh"
                         android:src="@drawable/ic_tasbeeh" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
                         android:fontFamily="@font/poppinsb"
+                        android:gravity="center"
                         android:text="@string/tashbeeh"
                         android:textColor="@color/Gold"
-                        android:textSize="18sp" />
+                        android:textSize="20sp" />
                 </LinearLayout>
 
             </GridLayout>
@@ -192,7 +196,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
-                android:background="@color/black">
+                android:background="@drawable/q">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -208,7 +212,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
-                android:background="@color/black">
+                android:background="@drawable/hadith">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -224,7 +228,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_margin="10dp"
-                android:background="@color/black">
+                android:background="@drawable/duaa">
 
                 <TextView
                     android:layout_width="match_parent"
