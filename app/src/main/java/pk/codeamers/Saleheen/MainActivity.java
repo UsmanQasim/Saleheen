@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void gotoQuran(View view){
+        Intent i = new Intent(MainActivity.this, Quran.class);
+        startActivity(i);
+    }
+
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //         super.onCreateOptionsMenu(menu);

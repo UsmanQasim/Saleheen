@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Saleheen">
         <activity
+            android:name=".PdfSurah"
+            android:exported="false" />
+        <activity
+            android:name=".Quran"
+            android:exported="false" />
+        <activity
             android:name=".QiblaDirection"
             android:exported="false" />
         <activity
@@ -23,7 +29,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>
