@@ -7,6 +7,7 @@
     <string name="SalahTracker">Salah Tracker</string>
     <string name="CurrentNamazTime">Current Namaz Time</string>
     <string name="tashbeeh">Tasbeeh</string>
-    <string name="HadithOfDay">Hadith Of Day</string>
-    <string name="DuaOfDay">Dua Of Day</string>
+    <string name="HadithOfDay">Hadith Of the Day</string>
+    <string name="VerseOfDay">Verse Of the Day</string>
+    <string name="DuaOfDay">Dua Of the Day</string>
 </resources>
