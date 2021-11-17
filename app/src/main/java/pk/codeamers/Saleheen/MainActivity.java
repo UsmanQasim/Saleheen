@@ -2,6 +2,9 @@ package pk.codeamers.Saleheen;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,9 +21,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void gotoQuran(View view){
-        Intent i = new Intent(MainActivity.this, Quran.class);
-        startActivity(i);
+    public void openFrag(View v){
+        Fragment fr ;
+        if(v == findViewById(R.id.leftButton))
+            fr = new MainScreen();
+        else
+            fr = new CommunityScreen();
+
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.fragments , fr);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 
 //    @Override
@@ -45,28 +57,4 @@ public class MainActivity extends AppCompatActivity {
 //    return true;
 //    }
 
-    public void showQiblaDirection(View v) {
-        Intent i = new Intent(MainActivity.this , QiblaDirection.class);
-        startActivity(i);
-    }
-
-    public void showQuran(View view){
-        Intent i = new Intent();
-        startActivity(i);
-    }
-
-    public void showMasjid(View view){
-        Intent i = new Intent();
-        startActivity(i);
-    }
-
-    public void showSalahTracker(View v){
-        Intent i = new Intent();
-        startActivity(i);
-    }
-
-    public void showDuaa(View view) {
-        Intent i = new Intent();
-        startActivity(i);
-    }
 }

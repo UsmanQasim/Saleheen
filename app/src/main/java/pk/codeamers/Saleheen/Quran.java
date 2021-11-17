@@ -22,6 +22,7 @@ public class Quran extends AppCompatActivity {
         setContentView(R.layout.activity_quran);
         pdfListView = (ListView) findViewById(R.id.surahNames);
 
+//        Display Array in ListView
         String[] pdfFilesNames = {"Holy Quran","Al Fateha"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,pdfFilesNames)
         {
@@ -35,7 +36,7 @@ public class Quran extends AppCompatActivity {
         };
         pdfListView.setAdapter(adapter);
 
-//        onclick List
+//        onclick List Item to Its Pdf
         pdfListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -45,8 +46,5 @@ public class Quran extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-
-
     }
 }
