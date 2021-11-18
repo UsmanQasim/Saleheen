@@ -3,16 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/mainFrame"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
     tools:context=".CommunityScreen"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
     >
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Community Activity"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:gravity="center"/>
 
 </FrameLayout>

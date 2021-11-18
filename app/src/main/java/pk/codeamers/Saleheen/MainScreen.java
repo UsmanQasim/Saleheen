@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class MainScreen extends Fragment {
@@ -26,20 +25,10 @@ public class MainScreen extends Fragment {
 
         // Fragment To Activity
         LinearLayout btn = root.findViewById(R.id.btnQuran);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getActivity(), Quran.class);
-                startActivity(i);
-            }
+        btn.setOnClickListener(v -> {
+            Intent i = new Intent(getActivity(), Quran.class);
+            startActivity(i);
         });
         return root;
     }
-
-
-//    Not Working Don't Know Why
-//    public void gotoQuran(View v){
-//        Intent i = new Intent(getActivity() , Quran.class);
-//        startActivity(i);
-//    }
 }

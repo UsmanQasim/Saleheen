@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="Gold">#ffb300</color>
+    <color name="btn_Selected">#31f6cc</color>
 </resources>

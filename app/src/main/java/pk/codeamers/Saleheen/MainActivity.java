@@ -1,16 +1,10 @@
 package pk.codeamers.Saleheen;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,17 +17,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void openFrag(View v){
         Fragment fr ;
-        if(v == findViewById(R.id.leftButton))
-            fr = new MainScreen();
-        else
-            fr = new CommunityScreen();
+        if(v == findViewById(R.id.leftButton)) { fr = new MainScreen(); }
+        else fr = new CommunityScreen();
 
-        FragmentManager manager = getSupportFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        transaction.replace(R.id.fragments , fr);
-        transaction.addToBackStack(null);
-        transaction.commit();
+        FragmentTransaction transaction1 = getSupportFragmentManager().beginTransaction();
+        transaction1.replace(R.id.fragments, fr);
+        transaction1.addToBackStack(null);
+        transaction1.commit();
     }
+}
+
 
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
@@ -56,5 +49,3 @@ public class MainActivity extends AppCompatActivity {
 //         }
 //    return true;
 //    }
-
-}
