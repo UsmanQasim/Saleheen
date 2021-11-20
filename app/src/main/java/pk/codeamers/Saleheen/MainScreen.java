@@ -29,6 +29,12 @@ public class MainScreen extends Fragment {
             Intent i = new Intent(getActivity(), Quran.class);
             startActivity(i);
         });
+        LinearLayout btn4 = root.findViewById(R.id.gotoMapLayout);
+        btn4.setOnClickListener( v -> {
+            Intent in = new Intent(getActivity(), NearestMosque.class);
+            startActivity(in);
+        });
+
         return root;
     }
 }

@@ -7,10 +7,10 @@
     android:descendantFocusability = "blocksDescendants"
     tools:context=".Quran">
 
-    <ListView
-        android:id="@+id/surahNames"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="5dp"
+        <ListView
+            android:id="@+id/surahNames"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
         />
 </LinearLayout>
