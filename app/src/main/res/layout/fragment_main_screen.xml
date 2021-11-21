@@ -154,6 +154,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="5dp"
                 android:gravity="center"
+                android:id="@+id/salahTracker"
                 android:orientation="vertical">
 
                 <ImageView
