@@ -81,6 +81,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_columnWeight="1"
+                android:id="@+id/dua"
                 android:layout_margin="5dp"
                 android:orientation="vertical">
 
@@ -102,6 +103,7 @@
 
             <LinearLayout
                 android:layout_width="0dp"
+                android:id="@+id/qiblaDirection"
                 android:layout_height="match_parent"
                 android:layout_columnWeight="1"
                 android:layout_margin="5dp"
@@ -178,6 +180,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_columnWeight="1"
+                android:id="@+id/tasbeeh"
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:orientation="vertical">

@@ -30,16 +30,39 @@ public class MainScreen extends Fragment {
             Intent i = new Intent(getActivity(), Quran.class);
             startActivity(i);
         });
+
+        //DuaActivity
+        LinearLayout btn2 = root.findViewById(R.id.dua);
+        btn2.setOnClickListener( v -> {
+            Intent i = new Intent(getActivity(), Dua.class);
+            startActivity(i);
+        });
+
+        //DuaActivity
+        LinearLayout btn3 = root.findViewById(R.id.qiblaDirection);
+        btn3.setOnClickListener( v -> {
+            Intent i = new Intent(getActivity(), QiblaDirection.class);
+            startActivity(i);
+        });
+
         //Google Map
         LinearLayout btn4 = root.findViewById(R.id.gotoMapLayout);
         btn4.setOnClickListener( v -> {
             Intent in = new Intent(getActivity(), NearestMosque.class);
             startActivity(in);
         });
+
         //SalahTracker
         LinearLayout btn5 = root.findViewById(R.id.salahTracker);
         btn5.setOnClickListener( v -> {
             Intent i = new Intent(getActivity(), SalahTracker.class);
+            startActivity(i);
+        });
+
+        //TasbeehActivity
+        LinearLayout btn6 = root.findViewById(R.id.tasbeeh);
+        btn6.setOnClickListener( v -> {
+            Intent i = new Intent(getActivity(), Tasbeeh.class);
             startActivity(i);
         });
 

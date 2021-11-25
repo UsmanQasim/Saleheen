@@ -23,8 +23,8 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:text="SALAH TRACKER HERE"
-            android:textSize="25dp"
+            android:text="@string/salah_tracker_here"
+            android:textSize="25sp"
             android:gravity="center"/>
     </LinearLayout>
 </LinearLayout>
