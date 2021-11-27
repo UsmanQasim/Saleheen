@@ -68,4 +68,8 @@ public class MainScreen extends Fragment {
 
         return root;
     }
+
+    public void foo(){
+
+    }
 }

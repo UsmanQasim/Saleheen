@@ -15,4 +15,6 @@
     <string name="dua_activity">DUA ACTIVITY</string>
     <string name="qibla_direction">QIBLA DIRECTION</string>
     <string name="salah_tracker_here">SALAH TRACKER HERE</string>
+    <string name="todo">TODO</string>
+    <string name="todo2">TODO</string>
 </resources>

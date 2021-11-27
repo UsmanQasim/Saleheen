@@ -28,21 +28,23 @@
                 android:id="@+id/leftButton"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
+                android:background="@color/white"
                 android:layout_weight="1"
                 android:onClick="openFrag"
                 android:src="@drawable/dome"
-                android:background="@color/btn_background"
-                android:scaleType="centerInside" />
+                android:scaleType="centerInside"
+                android:contentDescription="@string/todo" />
 
             <ImageButton
                 android:id="@+id/rightButton"
+                android:background="@color/white"
                 android:onClick="openFrag"
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:background="@color/btn_background"
                 android:layout_height="60dp"
                 android:src="@drawable/community"
-                android:scaleType="centerInside"/>
+                android:scaleType="centerInside"
+                android:contentDescription="@string/todo" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
