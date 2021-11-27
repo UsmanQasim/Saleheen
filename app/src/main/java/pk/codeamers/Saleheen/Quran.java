@@ -23,7 +23,6 @@ public class Quran extends AppCompatActivity {
 //        Display Array in ListView
         String[] pdfFilesNames = {
                 "Holy Quran",
-
                 "1\t\t Surah Al-Faatiha",
                 "2\t\t Surah Al-Baqara",
                 "3\t\t Surah Aal-i-Imraan",

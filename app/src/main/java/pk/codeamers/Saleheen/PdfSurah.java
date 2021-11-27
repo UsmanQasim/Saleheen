@@ -17,7 +17,7 @@ public class PdfSurah extends AppCompatActivity {
         if(getItem.equals("Holy Quran")){
             open.fromAsset("HolyQuran.pdf").load();
 
-        }else if(getItem.equals("Al Fateha")){
+        }else if(getItem.equals("1\t\t Surah Al-Faatiha")){
             open.fromAsset("fatehah.pdf").load();
         }
     }
