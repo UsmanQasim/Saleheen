@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Saleheen</string>
+    <string name="quran">القرآن</string>
+    <string name="dua">دعاء</string>
+    <string name="q_Direction">اتجاه القبلة</string>
+    <string name="NearMosque">بالقرب من المسجد</string>
+    <string name="SalahTracker">صلاح المقتفي</string>
+    <string name="CurrentNamazTime">توقيت نماز الحالي</string>
+    <string name="tashbeeh">تسبيح</string>
+    <string name="HadithOfDay">حديث اليوم</string>
+    <string name="VerseOfDay">آية اليوم</string>
+    <string name="DuaOfDay">دعاء اليوم</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dua_activity">DUA ACTIVITY</string>
+    <string name="qibla_direction">اتجاه القبلة</string>
+    <string name="salah_tracker_here">SALAH TRACKER HERE</string>
+    <string name="todo">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="Tiitle">صالحين</string>
+
+</resources>
+
